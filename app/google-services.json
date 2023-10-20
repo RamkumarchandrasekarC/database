@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "841014096957",
+    "project_id": "october-c5d42",
+    "storage_bucket": "october-c5d42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841014096957:android:cbd4fea53041fa167e2654",
+        "android_client_info": {
+          "package_name": "com.example.october"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwjV7ESVYfu7ZdWWRoONH2YwjQF3g7QZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

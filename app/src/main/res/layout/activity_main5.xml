@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal">
+
+    <!-- Blue top bar (RelativeLayout) -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:background="#24055C">
+
+        <TextView
+            android:id="@+id/textViewYourProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Your Profile"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Rest of the elements (LinearLayout) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabUploadPhoto"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#5F10EC"
+            android:src="@drawable/person"
+            android:contentDescription="Upload Photo" />
+
+        <ImageView
+            android:id="@+id/imageViewPhoto"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone" />
+
+        <!-- Upload button -->
+        <Button
+            android:id="@+id/buttonUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Upload" />
+
+        <!-- TableLayout for form fields -->
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <!-- TableRow for "Name" -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textViewName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textSize="25sp" />
+
+                <!-- Add a space for some separation -->
+                <Space
+                    android:layout_width="16dp"
+                    android:layout_height="1dp" />
+            </TableRow>
+
+            <!-- TableRow for "Date of Birth" -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textViewDOB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:text="Date of Birth"/>
+            </TableRow>
+
+            <!-- TableRow for "Designation" -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textViewDesignation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:text="Designation"/>
+            </TableRow>
+
+            <!-- TableRow for "College Name" -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textViewCollegeName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:text="College Name"/>
+            </TableRow>
+
+            <!-- TableRow for "District" -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textViewDistrict"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:text="District"/>
+            </TableRow>
+
+            <!-- TableRow for "Phone Number" -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textViewPhoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:text="Phone Number"/>
+            </TableRow>
+
+            <!-- Add more TableRows as needed -->
+
+        </TableLayout>
+
+        <!-- Buttons for CRUD operations -->
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <!-- Create Button -->
+            <Button
+                android:id="@+id/createButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Create" />
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="26dp"
+                android:text="Update" />
+
+            <!-- Delete Button -->
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="26dp"
+                android:text="Delete" />
+
+        </LinearLayout>
+
+        <!-- ... Rest of the code ... -->
+
+    </LinearLayout>
+</LinearLayout>
